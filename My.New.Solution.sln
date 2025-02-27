@@ -1,0 +1,65 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "My.New.Solution", "My.New.Solution\My.New.Solution.csproj", "{96F8FFD1-57E4-4D2E-AA58-D4105DF155C2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "My.New.Solution.Milestone.Api", "My.New.Solution.Milestone.Api\My.New.Solution.Milestone.Api.csproj", "{41F48070-1A8F-4FB1-A27A-50A69603ADEF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "My.New.Solution.Milestone.Worker", "My.New.Solution.Milestone.Worker\My.New.Solution.Milestone.Worker.csproj", "{FEA8E8A9-DFB5-43F9-9861-A0ED4C62BC4A}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{63B76B34-CA47-4DB4-B658-AF6F9AD44C55}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "http", "http", "{477E0306-3143-476E-83E7-EBFFF708414B}"
+	ProjectSection(SolutionItems) = preProject
+		http\My.New.Solution.Milestone.Api.http = http\My.New.Solution.Milestone.Api.http
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{41F48070-1A8F-4FB1-A27A-50A69603ADEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41F48070-1A8F-4FB1-A27A-50A69603ADEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41F48070-1A8F-4FB1-A27A-50A69603ADEF}.Debug|x64.ActiveCfg = Debug|x64
+		{41F48070-1A8F-4FB1-A27A-50A69603ADEF}.Debug|x64.Build.0 = Debug|x64
+		{41F48070-1A8F-4FB1-A27A-50A69603ADEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41F48070-1A8F-4FB1-A27A-50A69603ADEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41F48070-1A8F-4FB1-A27A-50A69603ADEF}.Release|x64.ActiveCfg = Release|x64
+		{41F48070-1A8F-4FB1-A27A-50A69603ADEF}.Release|x64.Build.0 = Release|x64
+		{FEA8E8A9-DFB5-43F9-9861-A0ED4C62BC4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEA8E8A9-DFB5-43F9-9861-A0ED4C62BC4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEA8E8A9-DFB5-43F9-9861-A0ED4C62BC4A}.Debug|x64.ActiveCfg = Debug|x64
+		{FEA8E8A9-DFB5-43F9-9861-A0ED4C62BC4A}.Debug|x64.Build.0 = Debug|x64
+		{FEA8E8A9-DFB5-43F9-9861-A0ED4C62BC4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEA8E8A9-DFB5-43F9-9861-A0ED4C62BC4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEA8E8A9-DFB5-43F9-9861-A0ED4C62BC4A}.Release|x64.ActiveCfg = Release|x64
+		{FEA8E8A9-DFB5-43F9-9861-A0ED4C62BC4A}.Release|x64.Build.0 = Release|x64
+		{63B76B34-CA47-4DB4-B658-AF6F9AD44C55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63B76B34-CA47-4DB4-B658-AF6F9AD44C55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63B76B34-CA47-4DB4-B658-AF6F9AD44C55}.Debug|x64.ActiveCfg = Debug|x64
+		{63B76B34-CA47-4DB4-B658-AF6F9AD44C55}.Debug|x64.Build.0 = Debug|x64
+		{63B76B34-CA47-4DB4-B658-AF6F9AD44C55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63B76B34-CA47-4DB4-B658-AF6F9AD44C55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63B76B34-CA47-4DB4-B658-AF6F9AD44C55}.Release|x64.ActiveCfg = Release|Any CPU
+		{63B76B34-CA47-4DB4-B658-AF6F9AD44C55}.Release|x64.Build.0 = Release|Any CPU
+		{96F8FFD1-57E4-4D2E-AA58-D4105DF155C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96F8FFD1-57E4-4D2E-AA58-D4105DF155C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96F8FFD1-57E4-4D2E-AA58-D4105DF155C2}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{96F8FFD1-57E4-4D2E-AA58-D4105DF155C2}.Debug|x64.Build.0 = Debug|Any CPU
+		{96F8FFD1-57E4-4D2E-AA58-D4105DF155C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96F8FFD1-57E4-4D2E-AA58-D4105DF155C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96F8FFD1-57E4-4D2E-AA58-D4105DF155C2}.Release|x64.ActiveCfg = Release|Any CPU
+		{96F8FFD1-57E4-4D2E-AA58-D4105DF155C2}.Release|x64.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4EE013F9-AD76-44F1-9422-98314E0C8840}
+	EndGlobalSection
+EndGlobal

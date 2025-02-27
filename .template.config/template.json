@@ -1,0 +1,90 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Maxime Places",
+  "classifications": [ "Package", "Api", "Worker", "Milestone" ],
+  "tags": {
+    "language": "C#",
+    "type": "solution"
+  },
+  "identity": "Net8.Ginsen.Package.Template",
+  "name": "Net8.Ginsen.Package.Template",
+  "shortName": "my-package",
+  "sourceName": "My.New.Solution",
+  "defaultName": "Net8.Ginsen.Package.Template",
+  "preferNameDirectory": true,
+  "guids": [
+    "96F8FFD1-57E4-4D2E-AA58-D4105DF155C2",
+    "41F48070-1A8F-4FB1-A27A-50A69603ADEF",
+    "FEA8E8A9-DFB5-43F9-9861-A0ED4C62BC4A",
+    "63B76B34-CA47-4DB4-B658-AF6F9AD44C55",
+    "477E0306-3143-476E-83E7-EBFFF708414B"
+  ],
+  "symbols": {
+    "includeTest": {
+      "type": "parameter",
+      "datatype": "bool",
+      "defaultValue": "true"
+    },
+    "fullNameDockerService": {
+      "type": "derived",
+      "valueSource": "name", // name -> pointe sur le nom du nouveau projet
+      "valueTransform": "lc",
+      "replaces": "my.new.solution"
+    },
+    "fullNameDockerImage": {
+      "type": "derived",
+      "valueSource": "name", // name -> pointe sur le nom du nouveau projet
+      "valueTransform": "dotToDashLowerCase",
+      "replaces": "my-new-solution"
+    },
+    "chartFolderRename": {
+      "type": "derived",
+      "valueSource": "name",
+      "valueTransform": "dotToDashLowerCase",
+      "fileRename": "my-new-solution"
+    }
+  },
+  "forms": {
+    "dotToDashLowerCase": {
+      "identifier": "chain",
+      "steps": [ "dotToDash", "lc" ] // An array of names of other transformations (applied in the order they appear in the array)
+    },
+    "dotToNull": {
+      "identifier": "replace",
+      "pattern": "\\.", // A regular expression matching the characters to replace
+      "replacement": "" // The replacement for the matched characters
+    },
+    "chainedFolder": {
+      "identifier": "chain",
+      "steps": [ "dotToDash", "lc" ]
+    },
+    "dotToDash": {
+      "identifier": "replace",
+      "pattern": "\\.",
+      "replacement": "-"
+    },
+    "lc": {
+      "identifier": "lowerCase"
+    }
+  },
+  "sources": [
+    {
+      "modifiers": [
+        {
+          "condition": "(!includeTest)",
+          "exclude": [ "*.Tests/**/*" ]
+        },
+        {
+          "exclude": [
+            "**/[Bb]in/**",
+            "**/[Oo]bj/**",
+            ".template.config/**/*",
+            "**/*.lock.json",
+            "**/.vs/**",
+            "**/.git/**"
+          ]
+        }
+      ]
+    }
+  ]
+}

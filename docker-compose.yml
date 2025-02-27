@@ -1,0 +1,13 @@
+services:
+  my.new.solution.milestone.api:
+    image: ${DOCKER_REGISTRY-}my-new-solution-milestone-api
+    build:
+      context: .
+      dockerfile: My.New.Solution.Milestone.Api/Dockerfile
+
+  my.new.solution.milestone.worker:
+    image: ${DOCKER_REGISTRY-}my-new-solution-milestone-worker
+    build:
+      context: .
+      dockerfile: My.New.Solution.Milestone.Worker/Dockerfile
+      
