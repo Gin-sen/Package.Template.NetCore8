@@ -23,10 +23,9 @@ namespace My.New.Solution.Milestone.Worker
         }
         catch (Exception ex)
         {
-          if (_logger.IsEnabled(LogLevel.Debug))
+          if (_logger.IsEnabled(LogLevel.Error))
           {
-            _logger.LogDebug("Worker running at: {time}", DateTimeOffset.Now);
-            _logger.Log(LogLevel.Information,"Worker running at: {time}", DateTimeOffset.Now);
+            _logger.Log(LogLevel.Error,"Worker running at: {time}", DateTimeOffset.Now);
           }
         }
       }
