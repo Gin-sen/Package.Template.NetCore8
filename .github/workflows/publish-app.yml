@@ -45,4 +45,4 @@ jobs:
         with:
          dotnet-version: ${{ env.DOTNET_VERSION }}
       - name: Build
-        run: dotnet pack -NoDefaultExcludes My.New.Solution.Template.csproj
+        run: dotnet pack --no-restore My.New.Solution.Template.csproj
