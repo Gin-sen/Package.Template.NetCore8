@@ -6,18 +6,19 @@
     "language": "C#",
     "type": "solution"
   },
-  "identity": "Net8.Ginsen.Package.Template",
-  "name": "Net8.Ginsen.Package.Template",
-  "shortName": "my-package",
+  "identity": "Ginsen.Net8.Package.Template",
+  "name": "Ginsen.Net8.Package.Template",
+  "shortName": "ginsen-pkg-tpl",
   "sourceName": "My.New.Solution",
-  "defaultName": "Net8.Ginsen.Package.Template",
+  "defaultName": "Net8.Package.Template",
   "preferNameDirectory": true,
   "guids": [
     "96F8FFD1-57E4-4D2E-AA58-D4105DF155C2",
     "41F48070-1A8F-4FB1-A27A-50A69603ADEF",
     "FEA8E8A9-DFB5-43F9-9861-A0ED4C62BC4A",
     "63B76B34-CA47-4DB4-B658-AF6F9AD44C55",
-    "477E0306-3143-476E-83E7-EBFFF708414B"
+    "477E0306-3143-476E-83E7-EBFFF708414B",
+    "4EE013F9-AD76-44F1-9422-98314E0C8840"
   ],
   "symbols": {
     "includeTest": {

@@ -20,5 +20,11 @@ dotnet new install .
 Pour créer un projet en utilisant cette template :
 
 ```bash
-dotnet new my-package -in=false -n My.Brand.New.Solution
+dotnet new ginsen-pkg-tpl -in=false -n My.Brand.New.Solution
+```
+
+Pour désinstaller la template (en cas d'amélioration par exemple), lancez cette commande et suivez les instructions suggérées :
+
+```bash
+dotnet new uninstall
 ```
