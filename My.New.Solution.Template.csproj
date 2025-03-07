@@ -8,8 +8,8 @@
     <Authors>Gin-sen</Authors>
     <Description>Templates to use when creating a Nuget package.</Description>
     <PackageTags>dotnet-new;templates;package</PackageTags>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <Readme>README.md</Readme>
+    <TargetFramework>net8.0</TargetFramework>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
 
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>
