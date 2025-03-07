@@ -36,15 +36,6 @@ spec:
             {{- toYaml .Values.securityContext.worker | nindent 12 }}
           image: "{{ .Values.image.repository.worker }}:{{ .Values.image.tag.worker | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
-          ports:
-            - name: http
-              containerPort: {{ .Values.service.worker.port }}
-              protocol: TCP
-          {{- with .Values.livenessProbe.worker }}
-          livenessProbe:
-            {{- toYaml .Values.livenessProbe.worker | nindent 12 }}
-          readinessProbe:
-            {{- toYaml .Values.readinessProbe.worker | nindent 12 }}
           resources:
             {{- toYaml .Values.resources.worker | nindent 12 }}
           {{- with .Values.volumeMounts.worker }}

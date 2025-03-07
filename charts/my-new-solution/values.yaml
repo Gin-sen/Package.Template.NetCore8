@@ -61,7 +61,8 @@ podAnnotations:
 # For more information checkout: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 podLabels:
   api: {}
-  worker: {}
+  worker:
+    sidecar.istio.io/inject: "false"
 
 podSecurityContext:
   api: {}
@@ -90,7 +91,7 @@ service:
 istio:
   api: 
     enabled: true
-    gateway: "istio-ingress/istio-ingress-gateway"
+    gateways: ["istio-ingress/istio-ingress-gateway"]
     hosts: ["test.mainframe.local"]
     prefix: "/"
   worker: {}

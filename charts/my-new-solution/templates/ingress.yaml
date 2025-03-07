@@ -35,9 +35,9 @@ spec:
             {{- end }}
             backend:
               service:
-                name: {{ include "my-new-solution.fullname" $ }}
+                name: {{ include "my-new-solution.fullname-api" $ }}
                 port:
-                  number: {{ $.Values.service.port }}
+                  number: {{ $.Values.service.api.port }}
           {{- end }}
     {{- end }}
 {{- end }}

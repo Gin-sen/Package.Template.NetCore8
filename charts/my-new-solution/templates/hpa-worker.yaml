@@ -17,6 +17,7 @@ spec:
     - type: ContainerResource
       containerResource:
         name: cpu
+        container: {{ .Chart.Name }}-worker
         target:
           type: Utilization
           averageUtilization: {{ .Values.autoscaling.worker.targetCPUUtilizationPercentage }}
@@ -25,6 +26,7 @@ spec:
     - type: ContainerResource
       containerResource:
         name: memory
+        container: {{ .Chart.Name }}-worker
         target:
           type: Utilization
           averageUtilization: {{ .Values.autoscaling.worker.targetMemoryUtilizationPercentage }}
