@@ -44,5 +44,7 @@ jobs:
         uses: actions/setup-dotnet@v3
         with:
          dotnet-version: ${{ env.DOTNET_VERSION }}
+      - name: Install dependencies
+        run: dotnet restore My.New.Solution.Template.csproj
       - name: Build
         run: dotnet pack --no-restore My.New.Solution.Template.csproj
