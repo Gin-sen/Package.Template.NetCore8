@@ -81,8 +81,8 @@
           "exclude": [ "*.Tests/**/*" ]
         },
         {
-          "condition": "(!includeTemplate)",
-          "exclude": [ ".template.config/*" ]
+          "condition": "includeTemplate",
+          "include": [ ".template.config/template.json" ]
         },
         {
           "exclude": [
